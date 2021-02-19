@@ -796,6 +796,8 @@ int main(int argc, char **argv) {
       break;
     case '?':
       c = optopt;
+      goto ARGS_DEFAULT;
+ARGS_DEFAULT:
     default:
       fprintf(stderr, "unknown option: %c\n", c);
       return EXIT_FAILURE;

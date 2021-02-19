@@ -470,6 +470,8 @@ int main(int argc, char **argv) {
 
     case '?':
       c = optopt;
+      goto ARGS_DEFAULT;
+ARGS_DEFAULT:
     default:
       fprintf(stderr, "unknown option: %c", c);
       return EXIT_FAILURE;
